@@ -1,0 +1,2 @@
+- [ ] Build the four KSF website pages and shared responsive navigation/contact actions.
+- [ ] Validate the site visually, route metadata, navigation, contact form, and mobile layout.
