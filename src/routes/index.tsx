@@ -5,6 +5,7 @@ import { ContactBanner, Eyebrow, PageFrame, phoneLink, whatsappLink } from "@/co
 import { principles, services } from "@/lib/site-content";
 import plantroom from "@/assets/ksf-plantroom.jpg";
 import pipingImage from "@/assets/ksf-piping.jpg";
+import electricalImage from "@/assets/ksf-electrical.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,7 +85,7 @@ function HomePage() {
         <div className="section-heading"><div><Eyebrow>Where we work</Eyebrow><h2>Supporting modern buildings and projects.</h2></div></div>
         <div className="image-trio">
           <div className="image-trio__item"><img src={plantroom} alt="Commercial building systems" width={1024} height={1280} loading="lazy" /><span className="image-trio__caption">Commercial buildings</span></div>
-          <div className="image-trio__item"><img src={services[1].image} alt="Electrical and technical services" width={1024} height={768} loading="lazy" /><span className="image-trio__caption">Engineering & technical services</span></div>
+          <div className="image-trio__item"><img src={electricalImage} alt="Electrical and technical services" width={1024} height={768} loading="lazy" /><span className="image-trio__caption">Engineering & technical services</span></div>
           <div className="image-trio__item"><img src={pipingImage} alt="Building maintenance systems" width={1024} height={768} loading="lazy" /><span className="image-trio__caption">Building maintenance</span></div>
         </div>
       </section>
