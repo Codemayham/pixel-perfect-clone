@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
+import { ArrowRight, ArrowUpRight, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactBanner, Eyebrow, PageFrame, phoneLink, whatsappLink } from "@/components/site";
 import { principles, services } from "@/lib/site-content";
@@ -29,7 +29,7 @@ function HomePage() {
             <p className="hero__description">KSF Electromechanical Works L.L.C. delivers professional electromechanical solutions for commercial, industrial and building projects across Dubai and the UAE.</p>
             <div className="hero__actions">
               <Button asChild variant="brand" size="lg"><Link to="/contact">Request a Quote <ArrowUpRight aria-hidden="true" /></Link></Button>
-              <Button asChild variant="whatsapp" size="lg"><a href={whatsappLink} target="_blank" rel="noreferrer"><span className="whatsapp-glyph" aria-hidden="true">◉</span> Chat on WhatsApp</a></Button>
+              <Button asChild variant="whatsapp" size="lg"><a href={whatsappLink} target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /> Chat on WhatsApp</a></Button>
               <Button asChild variant="outline" size="lg"><a href={phoneLink}><Phone aria-hidden="true" /> Call Now</a></Button>
             </div>
           </div>

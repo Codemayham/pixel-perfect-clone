@@ -185,6 +185,8 @@ html { scroll-behavior: smooth; }
 .header-actions { justify-self: end; display: flex; align-items: center; gap: .55rem; }
 .header-actions .header-call { padding-inline: .8rem; border-color: var(--border); border-radius: 999px; }
 .header-call svg { width: 1rem; height: 1rem; }
+.header-actions .header-whatsapp { border-radius: 999px; }
+.header-whatsapp svg { width: 1rem; height: 1rem; }
 .header-actions .header-quote { border-radius: 999px; }
 .mobile-menu-button, .mobile-nav { display: none; }
 .hero { padding-block: clamp(3rem, 6vw, 5.5rem) 3rem; }
@@ -318,7 +320,7 @@ html { scroll-behavior: smooth; }
   .site-header__inner { grid-template-columns: minmax(0,1fr) auto; }
   .desktop-nav { display: none; }
   .mobile-menu-button { display: inline-flex; }
-  .header-actions .header-call { display: none; }
+  .header-actions .header-call, .header-actions .header-whatsapp { display: none; }
   .mobile-nav { display: grid; padding: .5rem 1.5rem 1.25rem; border-top: 1px solid var(--border); background: var(--background); }
   .mobile-nav__link, .mobile-nav__phone { display: flex; min-height: 3.4rem; align-items: center; justify-content: space-between; gap: .8rem; border-bottom: 1px solid var(--border); color: var(--foreground); font-size: 1rem; text-decoration: none; }
   .mobile-nav__link svg { width: 1rem; color: var(--brand); }
@@ -340,7 +342,7 @@ html { scroll-behavior: smooth; }
   .brand-lockup__company { max-width: 12rem; font-size: .64rem; }
   .brand-lockup__location { font-size: .57rem; }
   .header-actions { gap: .35rem; }
-  .header-actions .header-quote { display: none; }
+  .header-actions .header-quote, .header-actions .header-whatsapp { display: none; }
   .hero { padding-block: 2.5rem 2rem; }
   .hero__grid { grid-template-columns: minmax(0,1fr); gap: 1.75rem; }
   .hero__copy { padding: 0; }
