@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Menu, Phone, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const phoneLink = "tel:+97150222678";
@@ -46,6 +46,9 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="header-actions">
+          <Button asChild variant="whatsapp" className="header-whatsapp">
+            <a href={whatsappLink} target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /><span>WhatsApp</span></a>
+          </Button>
           <Button asChild variant="outline" className="header-call">
             <a href={phoneLink} aria-label="Call KSF at +971 50 2228678">
               <Phone aria-hidden="true" />
@@ -82,6 +85,9 @@ export function SiteHeader() {
           ))}
           <a className="mobile-nav__phone" href={phoneLink}>
             <Phone aria-hidden="true" /> Call Now · +971 50 2228678
+          </a>
+          <a className="mobile-nav__phone" href={whatsappLink} target="_blank" rel="noreferrer">
+            <MessageCircle aria-hidden="true" /> Chat on WhatsApp
           </a>
         </nav>
       )}
@@ -121,11 +127,11 @@ export function FloatingContact() {
   return (
     <>
       <a className="floating-whatsapp" href={whatsappLink} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
-        <span className="whatsapp-glyph" aria-hidden="true">◉</span>
+        <MessageCircle aria-hidden="true" />
         <span>Chat on WhatsApp</span>
       </a>
       <div className="mobile-contact-bar">
-        <Button asChild variant="whatsapp" size="lg"><a href={whatsappLink} target="_blank" rel="noreferrer"><span className="whatsapp-glyph" aria-hidden="true">◉</span> WhatsApp</a></Button>
+        <Button asChild variant="whatsapp" size="lg"><a href={whatsappLink} target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /> WhatsApp</a></Button>
         <Button asChild variant="brand" size="lg"><a href={phoneLink}><Phone aria-hidden="true" /> Call Now</a></Button>
       </div>
     </>
